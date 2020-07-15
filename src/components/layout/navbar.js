@@ -21,7 +21,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className=" z-9999 text-accent h-rem-20 w-100 hidden xl:block lg:block m-0 t-0">
+      <nav className="fixed z-9999 text-accent h-rem-20 w-100 hidden xl:block lg:block m-0 t-0">
         <div className="w-90 relative flex mx-auto py-10 mx-0">
           <ul className="w-20 list my-auto mx-0 px-0 ">
             <li className="m-0 px-0 py-1">
