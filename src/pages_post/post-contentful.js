@@ -11,7 +11,7 @@ const postExercise = ({ data, pageContext, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={post.title} description={post.subtitle}/>
+      {/* <SEO title={post.title} description={post.subtitle}/> */}
       <Img fluid={post.image.fluid}/>
         <h1>{post.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.content.childContentfulRichText.html }} />
