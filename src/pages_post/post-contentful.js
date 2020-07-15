@@ -14,9 +14,9 @@ const postExercise = ({ data, pageContext, location }) => {
       {/* <SEO title={post.title} description={post.subtitle}/> */}
       {/* <Img fluid={post.image.fluid}/> */}
         {/* <h1>{post.title}</h1> */}
-        <div dangerouslySetInnerHTML={{ __html: post.content.childContentfulRichText.html }} />
-        <hr/>
-      <nav>
+        {/* <div dangerouslySetInnerHTML={{ __html: post.content.childContentfulRichText.html }} />
+        <hr/> */}
+      {/* <nav>
         <ul
           style={{
             display: `flex`,
@@ -41,7 +41,7 @@ const postExercise = ({ data, pageContext, location }) => {
             )}
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </Layout>
   )
 }
