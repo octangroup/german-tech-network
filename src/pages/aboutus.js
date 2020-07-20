@@ -7,7 +7,7 @@ const AboutUs = ({ siteTitle}) => (
     <div class="py-4 w-60 mx-auto text-center">
 		<h1 class="font-primary my-5 text-5xl tracking-wider">{siteTitle}</h1> 
     <div class="h-rem-1 w-rem-18 bg-accent mx-auto rounded-full"></div>
-    <div class="w-100 px-2 my-10 tracking-wider leading-loose text-black-50 text-group">	
+    <div class="w-100 px-2 my-10 tracking-wider font-primary leading-loose text-black-50 text-group text-xl">	
     <p>
       We are a platform that brings together tech-leaders from Rwanda and Germany and catalyzes the exchange of ideas and the initiation of joint projects between them. Our carrier is the German non-profit association Tech in Ruanda e.V..
   </p>
