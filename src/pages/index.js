@@ -40,8 +40,7 @@ const BlogIndex = ({ data, location }) => {
               <p>{node.subtitle}</p>
   
               </PostText> */}
-            
-            
+        
           </Post>
         )
       })}
