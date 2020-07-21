@@ -5,7 +5,7 @@ import React from "react"
 const AboutUs = ({ siteTitle}) => (
   <div className="panel z-10 px-0 pt-48 xs:pt-0 sm:pt-12 bg-white t-0 overflow-hidden relative min-h-screen md:h-auto sm:h-auto sm:h-auto">
     <div class="py-4 w-60 mx-auto text-center">
-		<h1 class="font-primary my-5 text-5xl tracking-wider">{siteTitle}</h1> 
+		<h1 class="heading-font my-5 text-5xl tracking-wider">{siteTitle}</h1> 
     <div class="h-rem-1 w-rem-18 bg-accent mx-auto rounded-full"></div>
     <div class="w-100 px-2 my-10 tracking-wider font-primary leading-loose text-black-50 text-group text-xl">	
     <p>
