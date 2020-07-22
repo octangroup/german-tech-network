@@ -26,7 +26,7 @@ class Navbar extends React.Component {
         <div className="w-20 flex list my-auto mx-0 px-0 ">
             <div className="m-0 w-30 px-0 py-1">
               <Link to="/">
-                <img src={"/img/Tech_logo.svg"}/>
+                <img src={"/img/logo.svg"}/>
               </Link>
             </div>
             <div className="logo-font text-sm w-70 py-2 text-primary">
