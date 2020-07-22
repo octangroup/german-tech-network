@@ -1,10 +1,7 @@
-import { Link } from "gatsby"
+
 import PropTypes from "prop-types"
 import React from "react"
 
-import TruncateHtml from "../utilities/TruncateHtml"
-import Translator from "../../utils/translator"
-import { connect } from "react-redux"
 
 class ProjectCard extends React.Component {
   render() {
@@ -38,9 +35,4 @@ ProjectCard.defaultProps = {
     translations: [],
   },
 }
-const mapStateToProps = state => ({
-  lang: state.lang,
-})
-
-
-export default connect(mapStateToProps)(ProjectCard)
+export default ProjectCard
