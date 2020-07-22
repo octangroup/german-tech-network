@@ -14,7 +14,7 @@ const IndividualProject = ({ siteTitle}) => (
       <li className="w-50 mx-5 text-base my-0">The German Rwandan Tech Network is a platform that brings together tech-leaders</li>
     </ul>
 
-    <ul className="flex mt-5 text-left font-primary mr-5">
+    <ul className="flex mt-5 text-left font-primary">
     <span className="w-rem-2 h-rem-2 bg-blue rounded-full mr-5 mt-3"></span>
       <li className="w-50  text-base my-0">The German Rwandan Tech Network is a platform that brings together tech-leaders</li>
       <span className="w-rem-2 h-rem-2 bg-blue rounded-full ml-5 mt-3"></span>
