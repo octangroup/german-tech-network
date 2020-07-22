@@ -11,8 +11,7 @@ class ProjectCard extends React.Component {
     return (
       <div className="">
 
-
-<div className="w-40  bg-white">
+      <div className="w-40  bg-white">
         <div className="w-95 h-rem-74 bg-red overflow-hidden">
 
         <img src={"/img/WeCodeTraining_MurahoTechnologies-1536x1020.jpg"} className="w-100 h-100 overflow-hidden" />
@@ -43,4 +42,5 @@ const mapStateToProps = state => ({
   lang: state.lang,
 })
 
-export default Project
+
+export default connect(mapStateToProps)(ProjectCard)
