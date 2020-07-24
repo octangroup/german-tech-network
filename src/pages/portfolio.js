@@ -2,6 +2,7 @@ import React from "react"
 // import { graphql } from "gatsby"
 import ProjectCard from "../components/cards/project"
 
+
 // import SEO from "../components/seo"
 // import Img from "gatsby-image"
 // import styled from "styled-components"
@@ -18,7 +19,7 @@ const PortfolioSection = () => (
             and Germany.
             </p>
 
-            <div className="flex  flex-wrap justify-center w-95 ml-auto ">
+            <div className="flex flex-wrap justify-center w-95 ml-auto ">
         
             <ProjectCard />
           

@@ -8,13 +8,13 @@ class ProjectCard extends React.Component {
     return (
       <div className="">
 
-      <div className="w-40  bg-white">
+      <div className="w-50  bg-white">
         <div className="w-95 h-rem-74 bg-red overflow-hidden">
 
         <img src={"/img/WeCodeTraining_MurahoTechnologies-1536x1020.jpg"} className="w-100 h-100 overflow-hidden" />
         </div>
-        <div class="w-65">
-          <h3 class="p-0 m-0">Code+Design Camps</h3>
+        <div class="w-65 text-left">
+          <h3 class="p-0 m-0 font-primary font-bold py-2">Code+Design Camps</h3>
           <p class="p-0 m-0">The Code+Design Camp is an educational 
               methodology that aims...</p>
         </div>
