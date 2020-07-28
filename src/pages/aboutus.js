@@ -1,15 +1,17 @@
 
-import Layout from "../components/layout"
 import React from "react"
 import { Link } from "gatsby"
-import { graphql } from "gatsby"
+import {graphql } from "gatsby"
+import PropTypes from "prop-types"
 
 
-const AboutUs = ({ data, location}) => {
+
+const AboutUs = ({ data,location}) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allContentfulPost.edges
+  
   return (
-    <Layout location={location} title={siteTitle}>
+    <div location={location} title={siteTitle}>
     {posts.map(({ node }) => {
     const title = node.title || node.slug
     return (
@@ -30,8 +32,13 @@ const AboutUs = ({ data, location}) => {
   </div>
     )
    })}
-   </Layout>
+   </div>
    )
+  }
+
+
+  AboutUs.propTypes = {
+    children: PropTypes.node.isRequired,
   }
 
 export default AboutUs

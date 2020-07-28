@@ -18,14 +18,7 @@ const PostExercise = ({ data, pageContext, location }) => {
         <hr/> 
        <nav>
         <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+>
           <li>
             {previous && (
               <Link to={previous.slug} rel="prev">
