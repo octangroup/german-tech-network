@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 // import Img from "gatsby-image"
 // import { Link } from "gatsby"
 // import styled from "styled-components"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 
 // const Post = styled.div`

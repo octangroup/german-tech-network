@@ -1,66 +1,66 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import Img from "gatsby-image"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+// import React from "react"
+// import { Link, graphql } from "gatsby"
+// import Img from "gatsby-image"
+// import Layout from "../components/layout"
+// import SEO from "../components/seo"
 
-const PostExercise = ({ data, pageContext, location }) => {
-  const post = data.ContentfulPost
-  const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
+// const PostExercise = ({ data, pageContext, location }) => {
+//   const post = data.ContentfulPost
+//   const siteTitle = data.site.siteMetadata.title
+//   const { previous, next } = pageContext
 
-  return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title={post.title} description={post.subtitle}/> 
-      <Img fluid={post.image.fluid}/>
-        <h1>{post.title}</h1> 
-        <div dangerouslySetInnerHTML={{ __html: post.content.childContentfulRichText.html }} />
-        <hr/> 
-       <nav>
-        <ul
->
-          <li>
-            {previous && (
-              <Link to={previous.slug} rel="prev">
-                ← {previous.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.slug} rel="next">
-                {next.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav> 
-    </Layout>
-  )
-}
+//   return (
+//     <Layout location={location} title={siteTitle}>
+//       <SEO title={post.title} description={post.subtitle}/> 
+//       <Img fluid={post.image.fluid}/>
+//         <h1>{post.title}</h1> 
+//         <div dangerouslySetInnerHTML={{ __html: post.content.childContentfulRichText.html }} />
+//         <hr/> 
+//        <nav>
+//         <ul
+// >
+//           <li>
+//             {previous && (
+//               <Link to={previous.slug} rel="prev">
+//                 ← {previous.title}
+//               </Link>
+//             )}
+//           </li>
+//           <li>
+//             {next && (
+//               <Link to={next.slug} rel="next">
+//                 {next.title} →
+//               </Link>
+//             )}
+//           </li>
+//         </ul>
+//       </nav> 
+//     </Layout>
+//   )
+// }
 
-export default PostExercise
+// export default PostExercise
 
-export const pageQuery = graphql`
-  query ContentfulPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    contentfulPost( slug: { eq: $slug }) {
-    title
-    subtitle
-    image {
-      fluid {
-        ...GatsbyContentfulFluid
-      }
-    }
-    content {
-      childContentfulRichText {
-        html
-      }
-    }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query ContentfulPostBySlug($slug: String!) {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//     contentfulPost( slug: { eq: $slug }) {
+//     title
+//     subtitle
+//     image {
+//       fluid {
+//         ...GatsbyContentfulFluid
+//       }
+//     }
+//     content {
+//       childContentfulRichText {
+//         html
+//       }
+//     }
+//     }
+//   }
+// `
