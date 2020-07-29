@@ -1,2 +1,14 @@
-@import '~og-css/sass/og';
+@import '/fonts/fonts.css';
 @import 'variable';
+@import '~og-css/sass/og';
+@import 'variable'; 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
+
+
+
+.heading-font{
+  font-family: "Avenir LTStd-Medium";
+}
+.logo-font{
+  font-family:'Comfortaa', cursive;
+} 
