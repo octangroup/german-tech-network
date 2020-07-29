@@ -1,8 +1,9 @@
 
 import React from "react"
 import { Link } from "gatsby"
-import {graphql } from "gatsby"
-import PropTypes from "prop-types"
+import { graphql } from "gatsby"
+import Layout from "../components/layout"
+
 
 
 
@@ -12,6 +13,7 @@ const AboutUs = ({ data,location}) => {
   
   return (
     <div location={location} title={siteTitle}>
+      <Layout/>
     {posts.map(({ node }) => {
     const title = node.title || node.slug
     return (
@@ -37,9 +39,6 @@ const AboutUs = ({ data,location}) => {
   }
 
 
-  AboutUs.propTypes = {
-    children: PropTypes.node.isRequired,
-  }
 
 export default AboutUs
 

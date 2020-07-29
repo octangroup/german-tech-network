@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import Img from "gatsby-image"
 // import { Link } from "gatsby"
-import AboutUs from "./aboutus"
 // import styled from "styled-components"
 import { Link } from "gatsby"
 
@@ -19,7 +18,7 @@ import { Link } from "gatsby"
 // const PostText = styled.div`
 //     flex: 75%;
 // `
-const BlogIndex = ({ data, location }) => {
+const Index = ({ data, location }) => {
   // console.log("hello")
   // const siteTitle = data.site.siteMetadata.title
   // const posts = data.allContentfulPost.edges
@@ -51,14 +50,14 @@ const BlogIndex = ({ data, location }) => {
           </div>
         )
       })}    */}
-      <AboutUs/>
+      
     </Layout>
   
   
   )
 }
 
-export default BlogIndex
+export default Index
 
 export const pageQuery = graphql`
   query {
