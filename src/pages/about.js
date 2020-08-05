@@ -26,9 +26,9 @@ const AboutUs = ({ data,location}) => {
       </Link>
     </h1> 
     <div class="h-rem-1 w-rem-18 bg-accent mx-auto rounded-full"></div>
-    <div class="w-100 px-2 my-10 tracking-wider font-primary leading-loose text-black-50 text-group text-xl">	
+    {/* <div class="w-100 px-2 my-10 tracking-wider font-primary leading-loose text-black-50 text-group text-xl">	
     {node.content.childContentfulRichText.html}
-	</div>
+	</div> */}
 	</div>
   </div>
   </div>
@@ -59,11 +59,7 @@ export const pageQuery = graphql`
             ...GatsbyContentfulFluid
           }
         }
-        content {
-              childContentfulRichText {
-                   html
-               }
-             }
+        
         slug
        }
      }
