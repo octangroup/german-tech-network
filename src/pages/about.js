@@ -39,7 +39,6 @@ const AboutUs = ({ data,location}) => {
   }
 
 
-
 export default AboutUs
 
 export const pageQuery = graphql`
