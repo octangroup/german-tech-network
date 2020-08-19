@@ -14,25 +14,25 @@ const IndividualProject = ({ data, location}) => {
         <div key={node.slug}>
 
   <div className="panel z-10 px-0 pt-16 xs:pt-0 sm:pt-12 bg-white t-0 overflow-hidden relative min-h-screen md:h-auto sm:h-auto sm:h-auto">
-    <div class="py-4 w-60 mx-auto text-center">
-		<h1 class="heading-font my-5 text-5xl tracking-wider">
+    <div class="py-4 w-60 xs:w-80 mx-auto text-center">
+		<h1 class="heading-font my-5 xs:text-xl text-5xl tracking-wider">
       <Link to={node.slug}>
     {title}
   </Link></h1> 
     <div class="h-rem-1 w-rem-18 bg-accent mx-auto rounded-full"></div>
     <div class="my-10 tracking-wider font-primary leading-loose text-xl">	
-    <ul className="flex text-left font-primary">
+    <ul className="flex xs:block text-left font-primary">
       <span className="w-rem-2 h-rem-2 bg-blue rounded-full mr-5 mt-3"></span>
-      <li className="w-50 text-base my-0">{node.subtitle}</li>
+      <li className="w-50 xs:w-100 text-base my-0">{node.subtitle}</li>
       <span className="w-rem-2 h-rem-2 bg-blue rounded-full ml-5 mt-3"></span>
-      <li className="w-50 mx-5 text-base my-0">{node.subtitle}</li>
+      <li className="w-50 mx-5 xs:mx-0 xs:w-100 text-base my-0">{node.subtitle}</li>
     </ul>
 
-    <ul className="flex mt-5 text-left font-primary">
+    <ul className="flex xs:block mt-5 text-left font-primary">
     <span className="w-rem-2 h-rem-2 bg-blue rounded-full mr-5 mt-3"></span>
-      <li className="w-50  text-base my-0">{node.subtitle}</li>
+      <li className="w-50 xs:w-100 text-base my-0">{node.subtitle}</li>
       <span className="w-rem-2 h-rem-2 bg-blue rounded-full ml-5 mt-3"></span>
-      <li className="w-50 mx-5 text-base my-0">{node.subtitle}</li>
+      <li className="w-50 xs:w-100 xs:mx-0 mx-5 text-base my-0">{node.subtitle}</li>
     </ul>
 	</div>
 
