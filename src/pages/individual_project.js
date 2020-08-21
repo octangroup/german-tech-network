@@ -22,17 +22,47 @@ const IndividualProject = ({ data, location}) => {
     <div class="h-rem-1 w-rem-18 bg-accent mx-auto rounded-full"></div>
     <div class="my-10 tracking-wider font-primary leading-loose text-xl">	
     <ul className="flex xs:block text-left font-primary">
-      <span className="w-rem-2 h-rem-2 bg-blue rounded-full mr-5 mt-3"></span>
-      <li className="w-50 xs:w-100 text-base my-0">{node.subtitle}</li>
-      <span className="w-rem-2 h-rem-2 bg-blue rounded-full ml-5 mt-3"></span>
-      <li className="w-50 mx-5 xs:mx-0 xs:w-100 text-base my-0">{node.subtitle}</li>
+      <div className="flex w-50 xs:w-100">
+        <div className="w-10">
+          <div className="w-rem-2 h-rem-2 bg-blue rounded-full mr-5 mt-3"></div>
+          </div>
+      <div className="w-90">
+        <li className="xs:w-100 text-base my-0">{node.subtitle}</li>
+        </div>
+      </div>
+      
+      <div className="flex w-50 xs:w-100">
+        <div className="w-10">
+        <div className="w-rem-2 h-rem-2 bg-blue rounded-full ml-5 mt-3"></div>
+        </div>
+      <div className="w-90">
+        <li className=" mx-1 xs:mx-0 xs:w-100 text-base my-0">{node.subtitle}</li>
+        </div>
+      </div>
     </ul>
 
-    <ul className="flex xs:block mt-5 text-left font-primary">
-    <span className="w-rem-2 h-rem-2 bg-blue rounded-full mr-5 mt-3"></span>
-      <li className="w-50 xs:w-100 text-base my-0">{node.subtitle}</li>
-      <span className="w-rem-2 h-rem-2 bg-blue rounded-full ml-5 mt-3"></span>
-      <li className="w-50 xs:w-100 xs:mx-0 mx-5 text-base my-0">{node.subtitle}</li>
+    <ul className="flex xs:block text-left font-primary pt-8">
+      <div className="flex w-50 xs:w-100">
+        <div className="w-10">
+          <div className="w-rem-2 h-rem-2 bg-blue rounded-full mr-5 mt-3"></div>
+          </div>
+      <div className="w-90">
+        <li className="xs:w-100 text-base my-0">{node.subtitle}</li>
+        </div>
+      
+      </div>
+      
+      <div className="flex w-50 xs:w-100">
+        <div className="w-10">
+        <div className="w-rem-2 h-rem-2 bg-blue rounded-full ml-5 mt-3"></div>
+        </div>
+      <div className="w-90">
+        <li className="mx-1 xs:mx-0 xs:w-100 text-base my-0">{node.subtitle}</li>
+        </div>
+      
+      </div>
+      
+      
     </ul>
 	</div>
 
