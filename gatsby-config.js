@@ -19,6 +19,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -38,6 +39,16 @@ module.exports = {
       resolve: `gatsby-plugin-sass`,
       options: {
         implementation: require("sass"),
+      },
+    },
+
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Avenir LTStd-Medium"],
+          urls: ["/fonts/fonts.css"],
+        },
       },
     },
 

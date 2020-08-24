@@ -13,7 +13,6 @@ import "./layout.css"
 import "../styles/app.scss"
 import Navbar from "./layout/navbar"
 
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
