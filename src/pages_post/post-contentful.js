@@ -1,13 +1,13 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import Img from "gatsby-image"
+// import { Link, graphql } from "gatsby"
+// import Img from "gatsby-image"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 
 const postExercise = ({ data, pageContext, location }) => {
-  const post = data.ContentfulPost
+  // const post = data.ContentfulPost
   const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
+  // const { previous, next } = pageContext
 
   return (
     <Layout location={location} title={siteTitle}>

@@ -21,15 +21,20 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className=" z-9999 text-accent h-rem-20 w-100 hidden xl:block lg:block m-0 t-0">
+      <nav className="z-9999 text-accent h-rem-32 w-100 hidden xl:block lg:block m-0 t-0">
         <div className="w-90 relative flex mx-auto py-10 mx-0">
-          <ul className="w-20 list my-auto mx-0 px-0 ">
-            <li className="m-0 px-0 py-1">
-              <Link to="/" className="font-primary text-primary text-base">
-                <img src={"/img/logo.svg"} alt="GERMAN RWANDAN TECH NETWORK" />
+        <div className="w-20 flex list my-auto mx-0 px-0 ">
+            <div className="m-0 w-30 px-0 py-1">
+              <Link to="/">
+                <img src={"/img/logo.svg"}/>
               </Link>
-            </li>
-          </ul>
+            </div>
+            <div className="logo-font text-sm w-70 py-2 text-primary">
+            <Link to="/">
+            <p >GERMAN RWANDAN TECH NETWORK</p>
+            </Link>
+            </div>
+          </div>
 
           <ul className="list w-80 text-right px-0 mr-0  text-xl pt-2">
             
@@ -57,7 +62,7 @@ Navbar.propTypes = {
 }
 
 Navbar.defaultProps = {
-  siteTitle: `Betahills`,
+  siteTitle: `GERMAN RWANDAN TECH NETWORK`,
   menuList: [
     {
       url: "/#about",
