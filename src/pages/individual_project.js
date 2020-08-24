@@ -31,9 +31,9 @@ const IndividualProject = ({ data, location}) => {
         </div>
       </div>
       
-      <div className="flex w-50 xs:w-100">
+      <div className="flex w-50 xs:pt-8 xs:w-100">
         <div className="w-10">
-        <div className="w-rem-2 h-rem-2 bg-blue rounded-full ml-5 mt-3"></div>
+        <div className="w-rem-2 h-rem-2 bg-blue rounded-full  mt-3"></div>
         </div>
       <div className="w-90">
         <li className=" mx-1 xs:mx-0 xs:w-100 text-base my-0">{node.subtitle}</li>
@@ -52,9 +52,9 @@ const IndividualProject = ({ data, location}) => {
       
       </div>
       
-      <div className="flex w-50 xs:w-100">
+      <div className="flex w-50 xs:pt-8 xs:w-100">
         <div className="w-10">
-        <div className="w-rem-2 h-rem-2 bg-blue rounded-full ml-5 mt-3"></div>
+        <div className="w-rem-2 h-rem-2 bg-blue rounded-full mt-3"></div>
         </div>
       <div className="w-90">
         <li className="mx-1 xs:mx-0 xs:w-100 text-base my-0">{node.subtitle}</li>
