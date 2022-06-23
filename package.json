@@ -28,7 +28,7 @@
     "react-helmet": "^5.2.1",
     "react-html-parser": "^2.0.2",
     "react-visibility-sensor": "^5.1.1",
-    "sass": "^1.26.12",
+    "sass": "^1.53.0",
     "sass-loader": "^8.0.2",
     "typography": "^0.16.19"
   },
